@@ -31,20 +31,27 @@
   /*    .navbar-nav li a:hover {
           background: $navbar-hover-bg;
           color: black;
+      }*/
+  /*    ul:nth-child(2) {
+          background: red;
       }*/ }
   #bs-navbar-collapse-1 .navbar-nav li a {
     color: white;
     font-weight: bold; }
-  #bs-navbar-collapse-1 .navbar-nav li:hover {
+  #bs-navbar-collapse-1 .navbar-nav li :hover {
     background: #FBC28D;
     color: black; }
   #bs-navbar-collapse-1 ul li {
-    /*height: 40px;*/
-    border-right: 2px solid #FBC28D;
-    /*border-bottom: none;*/
-    /*            a{
-                    padding-top: 11px;
-                    padding-bottom: 10px;
-                }*/ }
+    border-right: 2px solid #FBC28D; }
+  #bs-navbar-collapse-1 ul :last-child {
+    border-right: none; }
+
+.navbar-nav > li > a, .navbar-brand {
+  padding-top: 10px !important;
+  padding-bottom: 0 !important;
+  height: 40px; }
+
+.navbar {
+  min-height: 40px !important; }
 
 /*# sourceMappingURL=style.css.map */

@@ -32,10 +32,10 @@
             color: white;
             font-weight: bold;
         }*/
-/*    .navbar-nav li a:hover {
-        background: $navbar-hover-bg;
-        color: black;
-    }*/
+    /*    .navbar-nav li a:hover {
+            background: $navbar-hover-bg;
+            color: black;
+        }*/
 
     .navbar-nav{
         li{
@@ -43,7 +43,7 @@
                 color: white;
                 font-weight: bold;
             }
-            &:hover {
+            :hover {
                 background: $navbar-hover-bg;
                 color: black;
             }
@@ -52,17 +52,25 @@
 
     ul{
         li{
-            /*height: 40px;*/            
             border-right: 2px solid $navbar-hover-bg;
-            /*border-bottom: none;*/
-            /*            a{
-                            padding-top: 11px;
-                            padding-bottom: 10px;
-                        }*/
         }
-        
-        
+        :last-child {
+            border-right: none;
+        }
     }
+
+/*    ul:nth-child(2) {
+        background: red;
+    }*/
 }
 
+.navbar-nav > li > a, .navbar-brand {
+    padding-top: 10px !important;
+    padding-bottom:0 !important;
+    height: 40px;
+}
+
+.navbar {
+    min-height: 40px !important;
+}
 
