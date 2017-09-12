@@ -81,7 +81,8 @@
 .panel-default > .panel-heading {
     background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);
     border-color: $navbar-grdient-bottom;
-
+    border-radius: 0 !important;
+    
     padding: 7px 10px 1px 10px;
     height: 30px;
     font-size: 13px;
@@ -151,4 +152,19 @@
     top: 20%;
     left: 20px;
     width: 30%;
+}
+
+.social{
+    -webkit-transform: scale(0.8);
+}
+.social-ico-div{
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    width: 25%;
+/*    .btn-social-icon{
+        padding: 3px;
+        margin: 0;
+        height: 50px;
+    }*/
 }
