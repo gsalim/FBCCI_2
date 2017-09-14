@@ -6,9 +6,20 @@
     Created on : Sep 11, 2017, 3:52:21 PM
     Author     : G.S. Alim
 */
+/*Orange Theam*/
 /*$navbar-grdient-top: #F8B131;
 $navbar-grdient-mid: #F49119;
 $navbar-grdient-bottom: #EF7804;*/
+/*Blue Theam*/
+/*$navbar-grdient-top: #0F9BD8;
+$navbar-grdient-mid: #10A1F1;
+$navbar-grdient-bottom: #0C79A8;*/
+/*Silver Theam*/
+/*Dark Silver Theam*/
+/*$navbar-grdient-top: #667B7B;
+$navbar-grdient-mid: #344545;
+$navbar-grdient-bottom: #010202;*/
+/*$navbar-hover-bg: #FBC28D;*/
 /*@import '_social-network';*/
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -21,9 +32,9 @@ and open the template in the editor.
 */
 .dropdown-menu {
   /*color: black;*/
-  background: #0C79A8;
+  background: #71706F;
   font-size: 12px;
-  background-image: linear-gradient(#0F9BD8, #10A1F1, #0C79A8);
+  background-image: linear-gradient(#C7C6C7, #878787, #71706F);
 }
 
 .dropdown-submenu {
@@ -132,8 +143,8 @@ and open the template in the editor.
 .footer {
   height: 40px;
   margin-top: -10px;
-  background-color: #10A1F1;
-  background-image: linear-gradient(#0F9BD8, #10A1F1, #0C79A8);
+  background-color: #878787;
+  background-image: linear-gradient(#C7C6C7, #878787, #71706F);
   box-shadow: 0 10px 10px -3px gray;
   margin-bottom: 5px;
 }
@@ -151,7 +162,7 @@ and open the template in the editor.
   }
 }
 #bs-navbar-collapse-1 {
-  background-image: linear-gradient(#0F9BD8, #10A1F1, #0C79A8);
+  background-image: linear-gradient(#C7C6C7, #878787, #71706F);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*font-weight: bold;*/
   font-size: 13px;
@@ -169,12 +180,12 @@ and open the template in the editor.
   font-weight: bold;
 }
 #bs-navbar-collapse-1 .navbar-nav li :hover {
-  background: #FBC28D;
+  background: #71706F;
   color: black;
-  background-image: linear-gradient(#0F9BD8, #10A1F1, #0C79A8);
+  background-image: linear-gradient(#C7C6C7, #878787, #71706F);
 }
 #bs-navbar-collapse-1 ul li {
-  border-right: 2px solid #FBC28D;
+  border-right: 2px solid #71706F;
 }
 #bs-navbar-collapse-1 ul :last-child {
   border-right: none;
@@ -185,7 +196,7 @@ and open the template in the editor.
 }*/
 .navbar-default .navbar-nav > .open > a {
   /*background-color: #af6c2c;*/
-  background-color: #0C79A8;
+  background-color: #71706F;
 }
 
 .navbar-nav > li > a, .navbar-brand {
@@ -203,7 +214,7 @@ and open the template in the editor.
 }
 
 .notice {
-  background: #10A1F1;
+  background: #878787;
   height: 90px;
   color: white;
   margin-top: -20px;
@@ -213,7 +224,7 @@ and open the template in the editor.
 .panel-default > .panel-heading {
   /*background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);*/
   /*border-color: $navbar-grdient-bottom;*/
-  background-image: linear-gradient(#0F9BD8, #10A1F1, #0C79A8);
+  background-image: linear-gradient(#C7C6C7, #878787, #71706F);
   color: white;
   border-radius: 0 !important;
   padding: 7px 10px 1px 10px;
@@ -237,7 +248,7 @@ and open the template in the editor.
   margin-top: 1px;
   margin-right: 3px;
   float: left;
-  color: #0C79A8;
+  color: #71706F;
   font-weight: bold;
 }
 .notice-list a, .notice-list span {

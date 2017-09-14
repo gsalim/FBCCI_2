@@ -3,15 +3,29 @@
     Author     : G.S. Alim
 */
 
+/*Orange Theam*/
 /*$navbar-grdient-top: #F8B131;
 $navbar-grdient-mid: #F49119;
 $navbar-grdient-bottom: #EF7804;*/
 
-$navbar-grdient-top: #0F9BD8;
+/*Blue Theam*/
+/*$navbar-grdient-top: #0F9BD8;
 $navbar-grdient-mid: #10A1F1;
-$navbar-grdient-bottom: #0C79A8;
+$navbar-grdient-bottom: #0C79A8;*/
 
-$navbar-hover-bg: #FBC28D;
+/*Silver Theam*/
+$navbar-grdient-top: #C7C6C7;
+$navbar-grdient-mid: #878787;
+$navbar-grdient-bottom: #71706F;
+
+/*Dark Silver Theam*/
+/*$navbar-grdient-top: #667B7B;
+$navbar-grdient-mid: #344545;
+$navbar-grdient-bottom: #010202;*/
+
+$navbar-seperator: $navbar-grdient-bottom;
+
+/*$navbar-hover-bg: #FBC28D;*/
 
 $panel-bg-top: lightgray;
 $panel-bg-mid: darkgray;
