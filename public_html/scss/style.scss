@@ -6,7 +6,9 @@
 @import '_variables';
 
 /*@import '_social-network';*/
-/*@import '_nested-submenu';*/
+@import '_nested-submenu';
+
+/*@import '_nested_submenu_2';*/
 
 @media (min-width: 768px){
     .navbar-nav{
@@ -46,6 +48,7 @@
             :hover {
                 background: $navbar-hover-bg;
                 color: black;
+                background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
             }
         }
     }
@@ -79,10 +82,12 @@
 }
 
 .panel-default > .panel-heading {
-    background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);
-    border-color: $navbar-grdient-bottom;
+    /*background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);*/
+    /*border-color: $navbar-grdient-bottom;*/
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    color: white;
     border-radius: 0 !important;
-    
+
     padding: 7px 10px 1px 10px;
     height: 30px;
     font-size: 13px;
@@ -162,9 +167,9 @@
     top: 15%;
     left: 75%;
     width: 25%;
-/*    .btn-social-icon{
-        padding: 3px;
-        margin: 0;
-        height: 50px;
-    }*/
+    /*    .btn-social-icon{
+            padding: 3px;
+            margin: 0;
+            height: 50px;
+        }*/
 }

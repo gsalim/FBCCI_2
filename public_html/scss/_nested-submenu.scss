@@ -8,9 +8,17 @@ and open the template in the editor.
     Author     : G.S. Alim
 */
 
+.dropdown-menu {
+    /*color: black;*/
+    background: $navbar-grdient-bottom;
+    font-size: 12px;
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+}
+
 .dropdown-submenu {
+    /*color: black;*/
     position: relative;
-    background: #00BCF6;
+    /*background: $navbar-grdient-top;*/
 }
 
 .dropdown-submenu > .dropdown-menu {
@@ -21,7 +29,7 @@ and open the template in the editor.
     -webkit-border-radius: 0 6px 6px 6px;
     -moz-border-radius: 0 6px 6px;
     border-radius: 0 6px 6px 6px;
-    background: #00BCF6;
+    /*background: #00BCF6;*/
 }
 
 /*.dropdown-menu > .dropdown-submenu > li{
@@ -31,6 +39,7 @@ and open the template in the editor.
 
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
+    color: black;
 }
 
 .dropdown-submenu>a:after {
@@ -49,6 +58,7 @@ and open the template in the editor.
 
 .dropdown-submenu:hover > a:after {
     border-left-color: #fff;
+    /*color: black;*/
 }
 
 .dropdown-submenu.pull-left {

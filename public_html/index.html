@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>New FBCCI</title>
+        <title>FBCCI 2</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,6 +16,14 @@ and open the template in the editor.
     </head>
 
     <body>
+
+        <script>
+            $('ul.nav li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+            });
+        </script>
 
         <nav class="navbar navbar-default">
             <div class="container">
@@ -45,11 +53,72 @@ and open the template in the editor.
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
+
                 <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT FBCCI</a></li>
+
+                        <!--<li><a href="#">ABOUT FBCCI</a></li>-->
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <!--<li><a href="#">EXTRA</a></li>-->
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">FBCCI</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">BRIEF HISTORY</a></li>
+                                        <li><a href="#">PAST PRESIDENTS</a></li>
+                                        <li><a href="#">PAST FIRST VICE PRESIDENTS</a></li>
+                                        <li><a href="#">PAST VICE PRESIDENTS</a></li>
+                                        <li><a href="#">VISION & MISSION</a></li>
+                                        <li><a href="#">FBCCI SECRETARIAT</a></li>
+                                        <li><a href="#">FBCCI LEADERSHIP</a></li>                                        
+                                        <li><a href="#">INITIATIVES</a></li>
+                                        <li><a href="#">PERSPECTIVES</a></li>
+                                        <li><a href="#">ROLES</a></li>
+                                        <li><a href="#">STRATEGIES</a></li>
+                                        <li><a href="#">MODEL CODE OF CONDUCT</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">BOARD OF DIRECTORS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">PRESIDENTS</a></li>
+                                        <li><a href="#">FIRST VICE PRESIDENTS</a></li>
+                                        <li><a href="#">VICE PRESIDENTS</a></li>
+                                        <li><a href="#">DIRECTORS</a></li>
+                                        <li><a href="#">PRESIDENT DESIGNATION</a></li>
+                                        <li><a href="#">DIRECTOR GENERAL</a></li>
+                                        <li><a href="#">EXECUTIVE BOARD</a></li>                                        
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">FBCCI MEMBERSHIPS</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">CHIEF MEMBER BODIES</a></li>
+                                        <li><a href="#">GENERAL BODY MEMBERS (CHAMBERS 2017-2019)</a></li>
+                                        <li><a href="#">GENERAL BODY MEMBERS (ASSOCIATIONS 2017-2019)</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">STANDING COMMITTEE</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">STANDING COMMITTEE LISTS</a></li>
+                                        <li><a href="#">STANDING COMMITTEE MEMBERS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+
+
                         <li><a href="#">DIVISIONS</a></li>
                         <li><a href="#">EVENTS</a></li>
                         <li><a href="#">PUBLICATIONS</a></li>
@@ -92,6 +161,24 @@ and open the template in the editor.
                             <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                         </div>
                     </div>
+
+                    <!--Useful Links-->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Useful Links</div>
+                        <div class="panel-body">
+                            <a href = "https://www.bb.org.bd/econdata/exchangerate.php">Currency Conversion</a><br>
+                            <a href = "https://www.bb.org.bd/">Bangladesh Bank</a><br>
+                            <a href = "http://www.bangladesh.gov.bd/">Bangladesh National Portal</a><br>
+                            <a href = "http://a2i.pmo.gov.bd/">Access 2 Information</a><br><br>
+
+                            <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+
+                        </div>
+                        <!--                        <div class="panel-footer">
+                                                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                                                </div>-->
+                    </div>
+
                 </div>
 
                 <div class="col-md-6">
