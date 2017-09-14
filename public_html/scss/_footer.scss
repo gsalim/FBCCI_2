@@ -1,0 +1,28 @@
+/* 
+    Created on : Sep 14, 2017, 12:29:54 PM
+    Author     : G.S. Alim
+*/
+
+/*https://stackoverflow.com/questions/12081814/have-an-issue-with-box-shadow-inset-bottom-only*/
+
+.empty-block{
+    height: 100px;
+    background-color: lightgray;
+    box-shadow: inset  0 -10px 20px -10px black;
+}
+
+.footer{
+    height: 40px;
+    margin-top: -10px;
+    background-color: $navbar-grdient-mid;
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    box-shadow: 0 10px 10px -3px $panel-bg-bottom;
+    margin-bottom: 5px;
+    
+    h6{
+        padding-top: 1.3%;
+        font-weight: bold;
+    }
+}
+
+

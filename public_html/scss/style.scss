@@ -4,11 +4,10 @@
 */
 
 @import '_variables';
-
 /*@import '_social-network';*/
 @import '_nested-submenu';
-
-/*@import '_nested_submenu_2';*/
+@import '_top-banner';
+@import '_footer';
 
 @media (min-width: 768px){
     .navbar-nav{
@@ -21,11 +20,6 @@
 
 #bs-navbar-collapse-1{
     background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
-    /*-webkit-box-shadow: 0 0 25px 0 red;*/
-    /*box-shadow: 0 0 70px 0 #777;*/
-    /*box-shadow: 0px 0px 10px 0px #ccc;*/
-    /*box-shadow: -3px 3px 5px 3px #ccc;*/
-    /*box-shadow: 0 4px 10px 5px #ccc;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /*font-weight: bold;*/
     font-size: 13px;
@@ -63,6 +57,15 @@
     }
 }
 
+/*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #af6c2c;
+}*/
+
+.navbar-default .navbar-nav >.open>a {
+    /*background-color: #af6c2c;*/
+    background-color: $navbar-grdient-bottom;
+}
+
 .navbar-nav > li > a, .navbar-brand {
     padding-top: 8px !important;
     padding-bottom:0 !important;
@@ -71,6 +74,9 @@
 
 .navbar {
     min-height: 35px !important;
+}
+.dropdown-caret{
+    border-right:4px solid transparent !important;
 }
 
 .notice{
@@ -121,55 +127,4 @@
     }
 
     box-shadow: 0 10px 10px -6px $panel-bg-bottom;
-}
-
-/*https://stackoverflow.com/questions/12081814/have-an-issue-with-box-shadow-inset-bottom-only*/
-
-.empty-block{
-    height: 100px;
-    background-color: lightgray;
-    box-shadow: inset  0 -10px 20px -10px black;
-}
-
-.footer{
-    height: 40px;
-    margin-bottom: 5px;
-    background-color: $navbar-grdient-mid;
-    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
-    box-shadow: 0 10px 10px -3px $panel-bg-bottom;
-}
-
-.top-banner{
-    margin-bottom: 15px;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.top-bg{
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.bg-logo{
-    position: absolute;
-    top: 20%;
-    left: 20px;
-    width: 30%;
-}
-
-.social{
-    -webkit-transform: scale(0.8);
-}
-.social-ico-div{
-    position: absolute;
-    top: 15%;
-    left: 75%;
-    width: 25%;
-    /*    .btn-social-icon{
-            padding: 3px;
-            margin: 0;
-            height: 50px;
-        }*/
 }
