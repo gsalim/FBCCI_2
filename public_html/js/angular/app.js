@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 
-app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider, $state) {
         $urlRouterProvider.otherwise("/home");
         $stateProvider
                 .state('home', {
@@ -11,8 +11,32 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 .state('fbcci', {
                     url: "/fbcci",
                     templateUrl: "pages/fbcci.html",
+//                    onEnter: function () {
+//                        $state.go('fbcci.home');
+//                    }
                     controller: 'FBCCIController'
                 })
+                .state('fbcci.contact', {
+                    url: "/fbcci/contact",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/contact.html"
+//                            controller: 'FBCCIController'
+                        }
+                    }
+                })
+//                .state('fbcci.about', {
+//                    url: "/fbcci/about",
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/about.html",
+//                            controller: 'AgentAccessCtrl'
+//                        }
+//                    }
+//                })
+
+
+
 //                .state('home2', {
 //                    url: "/home2",
 //                    templateUrl: "pages/home2.html"

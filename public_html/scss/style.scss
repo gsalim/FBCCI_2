@@ -128,12 +128,13 @@
     padding-left: 15px;
     padding-right: 5px
 }*/
-
-.panel-body{
-    font-size: 12px;
-    max-height: 170px;
-    min-height: 170px;
-    /*overflow-y: scroll;*/
+.fbcci{
+    .panel-body{
+        font-size: 12px;
+        max-height: 170px;
+        min-height: 170px;
+        /*overflow-y: scroll;*/
+    }
 }
 
 .notice-list{
