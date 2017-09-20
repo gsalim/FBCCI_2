@@ -2,12 +2,12 @@
     Created on : Jul 24, 2017, 2:47:35 PM
     Author     : G.S. Alim
 */
-
 @import '_variables';
-/*@import '_social-network';*/
+@import '_custom-gutter';
 @import '_nested-submenu';
 @import '_top-banner';
 @import '_footer';
+@import '_home';
 
 @media (min-width: 768px){
     .navbar-nav{
@@ -79,6 +79,17 @@
     border-right:4px solid transparent !important;
 }
 
+#FBCCICarousel{
+    img{
+        height: 500px;
+        width: 100%;
+    }
+}
+
+.small-box-row{
+    margin-top: 10px;
+}
+
 .notice{
     background: $navbar-grdient-mid;
     height: 90px;
@@ -87,9 +98,9 @@
     padding-top: 20px;
 }
 
-.panel-default > .panel-heading {
-    /*background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);*/
-    /*border-color: $navbar-grdient-bottom;*/
+/*.panel-default > .panel-heading {
+    background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);
+    border-color: $navbar-grdient-bottom;
     background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
     color: white;
     border-radius: 0 !important;
@@ -99,10 +110,30 @@
     font-size: 13px;
 
     font-weight: bold;
+}*/
+
+.custome-panel{
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    color: white !important;
+    border-radius: 0 !important;
+
+    padding: 7px 10px 1px 10px;
+    height: 30px;
+    font-size: 13px;
+
+    font-weight: bold;
 }
+
+/*.lr-padding-5px{
+    padding-left: 15px;
+    padding-right: 5px
+}*/
 
 .panel-body{
     font-size: 12px;
+    max-height: 170px;
+    min-height: 170px;
+    /*overflow-y: scroll;*/
 }
 
 .notice-list{
@@ -126,5 +157,5 @@
         font-size: 12px;
     }
 
-    box-shadow: 0 10px 10px -6px $panel-bg-bottom;
+    /*box-shadow: 0 10px 10px -6px $panel-bg-bottom;*/
 }

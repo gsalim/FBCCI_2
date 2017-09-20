@@ -1,0 +1,59 @@
+/* 
+    Created on : Sep 18, 2017, 4:18:58 PM
+    Author     : G.S. Alim
+*/
+
+.home{
+
+    /*    .about{
+            margin-top: -20px;
+            background-color: $navbar-grdient-top;
+            h2{
+                padding-top: 10px;
+                font-weight: bold;
+            }
+            p{
+                padding-bottom: 20px;
+            }
+        }*/
+
+    .welcome{
+        background-color: $firstpage-bg-color;
+        /*background-color: $navbar-grdient-bottom;*/
+        color: #fff;
+        position: relative;
+        top: -20px;
+        padding: 10px 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        h1{
+            /*padding-bottom: 10px;*/
+            font-size: 4em;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+
+    #homeCarousel{
+        img{
+            height: 500px;
+            width: 100%;
+        }
+    }
+
+    /*    button{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }*/
+
+    .btn-primary{
+        /*font-family: 'Roboto Condensed', sans-serif;*/
+        background-color: $firstpage-bg-color;
+        /*display: block;*/
+        margin: 20px auto;
+        /*width: 15%;*/
+        border-radius: 0 !important;
+    }
+}
+

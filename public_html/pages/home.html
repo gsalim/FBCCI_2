@@ -1,1 +1,30 @@
-<h3 class="well">This is home page.</h3>  
+<div class="container home">
+    <!--<section id="welcome">-->
+    <div class="welcome">
+        <h1 class="text-center">FBCCI</h1>
+        <p class="text-center">The Federation of Bangladesh Chambers of Commerce and Industry</p>
+        <hr>
+        <!--<div class="container wow fadeInDown" data-wow-duration="2s">-->
+        <p class="text-center">Establishment in 1973. The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
+            is the apex trade organization of Bangladesh playing a pivotal role in consultative and 
+            advisory capacity, safeguarding the interest of the private sector. International Linkages FBCCI 
+            maintains close relations with Trade and Industrial Associations and other mercantile and public 
+            bodies abroad. FBCCI is the member of different international bodies, such as International Chamber 
+            of Commerce (ICC), Islamic Chamber of Commerce and Industry (ICCI), Confederation of Asia-Pacific 
+            Chambers of Commerce and Industry (CACCI), and the SAARC Chamber of Commerce and Industry (SAARC CCI). 
+        </p>
+        <!--</div>-->
+    </div>
+    <!--</section>-->
+
+    <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="homeCarousel">
+        <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            <img ng-src="{{slide.image}}">
+        </div>
+    </div>
+
+    <div class="text-center">
+        <!--<button ng-click="gotoFBCCI()" class="btn btn-default">ENTER FBCCI</button>-->
+        <button type="button" ng-click="gotoFBCCI()" class="btn btn-primary btn-lg">ENTER FBCCI</button>
+    </div>
+</div>

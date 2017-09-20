@@ -4,7 +4,7 @@
             }, function () {
                 $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
             });
-        </script>-->
+</script>-->
 
 <nav class="navbar navbar-default">
     <div class="container">
@@ -108,40 +108,93 @@
 <!--http://www.cii.in/-->
 <div class="container">
     <div class="row">
+
+        <div class="col-md-12">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="FBCCICarousel">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-src="{{slide.image}}">
+                </div>
+            </div>
+            <!-- <div class="text-center notice">
+                <h2>NOTICE</h2>
+            </div>-->
+        </div><!--Carosusel Div End-->
+    </div><!--Carosusel Row End-->
+
+    <div class="row small-box-row">
+        <!--About FBCCI Panel-->
         <div class="col-md-3">
-            <!--About FBCCI Panel-->
             <div class="panel panel-default">
-                <div class="panel-heading">About FBCCI</div>
+                <div class="panel-heading custome-panel">Ongoing Events</div>
+                <div class="panel-body">
+                    <p class="text-justify">The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
+                        is the apex trade organization of Bangladesh playing a pivotal role in
+                        consultative and advisory capacity, safeguarding the interest of the private sector.
+                    </p>
+                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Vission & Mission Panel-->
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading custome-panel">Upcoming Events</div>
+                <div class="panel-body">
+                    <p class="text-justify">The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
+                        is the apex trade organization of Bangladesh playing a pivotal role in
+                        consultative and advisory capacity, safeguarding the interest of the private sector.
+                    </p>
+                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                </div>
+                <!--                <div class="panel-footer">
+                                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                                </div>-->
+            </div>
+        </div>
+
+        <!--About FBCCI Panel-->
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-heading custome-panel">About FBCCI</div>
                 <div class="panel-body">
                     <p class="text-justify">
                         The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
                         is the apex trade organization of Bangladesh playing a pivotal role in
                         consultative and advisory capacity, safeguarding the interest of the private sector.
                     </p>
-                </div>
-                <div class="panel-footer">
                     <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                 </div>
+                <!--                <div class="panel-footer">
+                                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                                </div>-->
             </div>
+        </div>
 
+        <div class="col-md-3">
             <!--Vission & Mission Panel-->
             <div class="panel panel-default">
-                <div class="panel-heading">Vission & Mission</div>
+                <div class="panel-heading custome-panel">Vission & Mission</div>
                 <div class="panel-body">
                     <p class="text-justify">
                         The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
                         is the apex trade organization of Bangladesh playing a pivotal role in
                         consultative and advisory capacity, safeguarding the interest of the private sector.
                     </p>
-                </div>
-                <div class="panel-footer">
                     <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                 </div>
+                <!--                <div class="panel-footer">
+                                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                                </div>-->
             </div>
+        </div>
+    </div><!--First Row of Small Box Ends-->
 
-            <!--Useful Links-->
+    <div class="row small-box-row">
+        <!--Useful Links-->
+        <div class="col-md-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Useful Links</div>
+                <div class="panel-heading custome-panel">Useful Links</div>
                 <div class="panel-body">
                     <a href = "https://www.bb.org.bd/econdata/exchangerate.php">Currency Conversion</a><br>
                     <a href = "https://www.bb.org.bd/">Bangladesh Bank</a><br>
@@ -149,135 +202,85 @@
                     <a href = "http://a2i.pmo.gov.bd/">Access 2 Information</a><br><br>
 
                     <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
-
                 </div>
-
-                <!--                        <div class="panel-footer">
-                                            <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
-                                        </div>-->
-
             </div>
-
         </div>
 
+        <!--Notice Board-->
         <div class="col-md-6">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="images/sliders/DSC_0146.jpg" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="images/sliders/DSC_0724.jpg" alt="Chicago">
-                    </div>
+            <div class="panel panel-default">
+                <div class="panel-heading text-center custome-panel">Notice Board</div>
+                <div class="panel-body notice-list">
+                    <ul class="fa-ul">
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href = "#">Bangladesh Budget in Brief 2017-2018.</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href = "#">Notice For E-Library Service, FBCCI.</a>
+                            <!--<hr>-->
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href = "#">Result of Election of the Office Bearers of FBCCI for the Term 2017-2018.</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href = "#">Schedule of Election for the Post of President, First Vice President & Vice President.</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-angle-double-right"></i>
+                            <a href = "#">Result of Election of FBCCI (2017-2018).</a>
+                        </li>
+                        <!--                         <li>
+                                                    <i class="fa fa-angle-double-right"></i>
+                                                    <a href = "#">Valid Nominations for the post of Directors of FBCCI for the Term 2017-2018 & 
+                                                        2018-2019 (Chamber Group)</a>
+                                                </li>
+                                               <li>
+                                                    <i class="fa fa-angle-double-right"></i>
+                                                    <a href = "#">Valid Nominations for the post of Directors of FBCCI for the Term 2017-2018 & 
+                                                        2018-2019 (Association Group)</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-angle-double-right"></i>
+                                                    <a href = "#">CIB Inquiry Form</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-angle-double-right"></i>
+                                                    <a href = "#">Export Incentive Form</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-angle-double-right"></i>
+                                                    <a href = "#">City Corporation Trade License Fee Schedule</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-angle-double-right"></i>
+                                                    <a href = "#">Questionnaire (Business Profile of the General Body)</a>
+                                                </li>-->
+                    </ul>
+
+                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                 </div>
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-            <div class="text-center notice">
-                <h2>NOTICE</h2>
-            </div>
-
-            <!--List of Notices-->
-            <div class="notice-list"> 
-                <ul class="fa-ul">
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Bangladesh Budget in Brief 2017-2018.</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Notice For E-Library Service, FBCCI.</a>
-                        <!--<hr>-->
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Result of Election of the Office Bearers of FBCCI for the Term 2017-2018.</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Schedule of Election for the Post of President, First Vice President & Vice President.</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Result of Election of FBCCI (2017-2018).</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Valid Nominations for the post of Directors of FBCCI for the Term 2017-2018 & 
-                            2018-2019 (Chamber Group)</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Valid Nominations for the post of Directors of FBCCI for the Term 2017-2018 & 
-                            2018-2019 (Association Group)</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">CIB Inquiry Form</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Export Incentive Form</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">City Corporation Trade License Fee Schedule</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-angle-double-right"></i>
-                        <a href = "#">Questionnaire (Business Profile of the General Body)</a>
-                    </li>
-                </ul>
-                <!--End List of Notices-->
             </div>
         </div>
-
+        
         <div class="col-md-3">
-            <!--About FBCCI Panel-->
             <div class="panel panel-default">
-                <div class="panel-heading">Ongoing Events</div>
+                <div class="panel-heading custome-panel">International</div>
                 <div class="panel-body">
-                    <p class="text-justify">The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
-                        is the apex trade organization of Bangladesh playing a pivotal role in
-                        consultative and advisory capacity, safeguarding the interest of the private sector.
+                    <p class="text-justify">
+                        The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
+                        is the apex trade organization of Bangladesh.
                     </p>
-                </div>
-                <div class="panel-footer">
-                    <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
-                </div>
-            </div>
-
-            <!--Vission & Mission Panel-->
-            <div class="panel panel-default">
-                <div class="panel-heading">Upcoming Events</div>
-                <div class="panel-body">
-                    <p class="text-justify">The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
-                        is the apex trade organization of Bangladesh playing a pivotal role in
-                        consultative and advisory capacity, safeguarding the interest of the private sector.
-                    </p>
-                </div>
-                <div class="panel-footer">
                     <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                 </div>
             </div>
         </div>
 
-    </div>
+    </div><!--Second Row of Small Box Ends-->
+
 </div>
 
 <div class="container">

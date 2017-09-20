@@ -5,12 +5,13 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
         $stateProvider
                 .state('home', {
                     url: "/home",
-                    templateUrl: "pages/home.html"
-                            // controller: 'HomeCtrl'
+                    templateUrl: "pages/home.html",
+                    controller: 'HomeController'
                 })
                 .state('fbcci', {
                     url: "/fbcci",
-                    templateUrl: "pages/fbcci.html"
+                    templateUrl: "pages/fbcci.html",
+                    controller: 'FBCCIController'
                 })
 //                .state('home2', {
 //                    url: "/home2",
