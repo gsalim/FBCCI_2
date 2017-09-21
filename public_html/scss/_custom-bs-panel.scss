@@ -1,0 +1,48 @@
+/*
+    Design For: Custome Bootstrap Panel
+    Created on : Sep 21, 2017, 11:42:19 AM
+    Author     : GS Alim (Gmail: golam.alim | 01711-804845)
+*/
+
+@mixin default-panel-conf{
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    color: $panel-header-text-color !important;
+    border-radius: 0 !important;
+
+    padding: 7px 10px 1px 10px;
+    height: 30px;
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.panel-row{
+    margin-top: 10px;
+}
+
+/*.panel-default > .panel-heading {
+    background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);
+    border-color: $navbar-grdient-bottom;
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    color: white;
+    border-radius: 0 !important;
+
+    padding: 7px 10px 1px 10px;
+    height: 30px;
+    font-size: 13px;
+
+    font-weight: bold;
+}*/
+
+.custome-panel{
+    @include default-panel-conf;
+}
+
+.fbcci{
+    .panel-body{
+        font-size: 12px;
+        max-height: 170px;
+        min-height: 170px;
+        /*overflow-y: scroll;*/
+    }
+}

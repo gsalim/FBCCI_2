@@ -1,6 +1,6 @@
 var app = angular.module('app', ['ui.router', 'ui.bootstrap', 'ngAnimate']);
 
-app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider, $state) {
+app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/home");
         $stateProvider
                 .state('home', {
@@ -17,24 +17,53 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                     controller: 'FBCCIController'
                 })
                 .state('fbcci.contact', {
-                    url: "/fbcci/contact",
+                    url: "/contact",
                     views: {
                         "fbcci": {
                             templateUrl: "pages/fbcci/contact.html"
-//                            controller: 'FBCCIController'
                         }
                     }
                 })
-//                .state('fbcci.about', {
-//                    url: "/fbcci/about",
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/about.html",
-//                            controller: 'AgentAccessCtrl'
-//                        }
-//                    }
-//                })
-
+                .state('fbcci.about', {
+                    url: "/about",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/about.html"
+                        }
+                    }
+                })
+                .state('fbcci.past_presidents', {
+                    url: "/past-presidents",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/past_presidents.html"
+                        }
+                    }
+                })
+                .state('fbcci.past_first_vp', {
+                    url: "/past-first-vp",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/past_first_vp.html"
+                        }
+                    }
+                })
+                .state('fbcci.past_vp', {
+                    url: "/past_vp",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/past_vp.html"
+                        }
+                    }
+                })
+                .state('fbcci.vision_mission', {
+                    url: "/vision_mission",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/vision_mission.html"
+                        }
+                    }
+                })
 
 
 //                .state('home2', {

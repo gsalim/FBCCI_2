@@ -1,0 +1,66 @@
+/*
+    Design for : Navbar
+    Created on : Sep 21, 2017, 11:32:41 AM
+    Author     : G.S. Alim
+*/
+
+#bs-navbar-collapse-1{
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*font-weight: bold;*/
+    font-size: 13px;
+
+    /*    .navbar-nav li a{
+            color: white;
+            font-weight: bold;
+        }*/
+    /*    .navbar-nav li a:hover {
+            background: $navbar-hover-bg;
+            color: black;
+        }*/
+
+    .navbar-nav{
+        li{
+            a{
+                color: white;
+                font-weight: bold;
+            }
+            :hover {
+                background: $navbar-seperator;
+                color: black;
+                background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+            }
+        }
+    }
+
+    ul{
+        li{
+            border-right: 2px solid $navbar-seperator;
+        }
+        :last-child {
+            border-right: none;
+        }
+    }
+}
+
+/*.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: #af6c2c;
+}*/
+
+.navbar-default .navbar-nav >.open>a {
+    /*background-color: #af6c2c;*/
+    background-color: $navbar-grdient-bottom;
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding-top: 8px !important;
+    padding-bottom:0 !important;
+    height: 35px;
+}
+
+.navbar {
+    min-height: 35px !important;
+}
+.dropdown-caret{
+    border-right:4px solid transparent !important;
+}

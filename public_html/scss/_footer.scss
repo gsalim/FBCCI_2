@@ -12,17 +12,18 @@
 }
 
 .footer{
-    height: 40px;
+    height: 35px;
     margin-top: -10px;
     background-color: $navbar-grdient-mid;
     background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
-    box-shadow: 0 10px 10px -3px $panel-bg-bottom;
-    margin-bottom: 5px;
+    box-shadow: 0 10px 10px -3px $footer-bg-bottom;
+    /*margin-bottom: 5px;*/
     
     h6{
-        padding-top: 1.3%;
+        padding-top: 1.1%;
         font-weight: bold;
     }
+    /*color: white;*/
 }
 
 
