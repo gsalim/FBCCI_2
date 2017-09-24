@@ -22,7 +22,8 @@
 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle" ng-click="iconBarClicked()">
+                <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">-->
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -32,31 +33,25 @@
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-                <li><a data-ui-sref="fbcci">HOME</a></li>
+        <div class="navbar-collapse" ng-class="isNavCollapsed ? 'collapse' : 'in'" id="bs-navbar-collapse-1">
+            <!--<div class="collapse navbar-collapse" uib-collapse="isNavCollapsed" id="bs-navbar-collapse-1">-->
+            <!--<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">-->
 
-                <!--<li><a href="#">ABOUT FBCCI</a></li>-->
+            <ul class="nav navbar-nav">
+                <li ng-click="hideDropDown()"><a data-ui-sref="fbcci">HOME</a></li>
+
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT<span class="caret dropdown-caret"></span></a>
                     <ul class="dropdown-menu">
-                        <!--<li><a href="#">EXTRA</a></li>-->
                         <li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">FBCCI</a>
+                            <a ng-click="isNavCollapsed = !isNavCollapsed" tabindex="-1" data-ui-sref="fbcci.about">FBCCI</a>
                             <ul class="dropdown-menu">
-                                <li><a data-ui-sref="fbcci.about">BRIEF HISTORY</a></li>
-                                <li><a data-ui-sref="fbcci.past_presidents">PAST PRESIDENTS</a></li>
-                                <li><a data-ui-sref="fbcci.past_first_vp">PAST FIRST VICE PRESIDENTS</a></li>
-                                <li><a data-ui-sref="fbcci.past_vp">PAST VICE PRESIDENTS</a></li>
-                                <li><a data-ui-sref="fbcci.vision_mission">VISION & MISSION</a></li>
-                                <li><a href="#">FBCCI SECRETARIAT</a></li>
-<!--                                <li><a href="#">FBCCI LEADERSHIP</a></li>                                        
-                                <li><a href="#">INITIATIVES</a></li>
-                                <li><a href="#">PERSPECTIVES</a></li>
-                                <li><a href="#">ROLES</a></li>
-                                <li><a href="#">STRATEGIES</a></li>
-                                <li><a href="#">MODEL CODE OF CONDUCT</a></li>-->
+                                <li ng-click="hideDropDown()"><a data-ui-sref="fbcci.about">BRIEF HISTORY</a></li>
+                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.past_presidents">PAST PRESIDENTS</a></li>
+                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.past_first_vp">PAST FIRST VICE PRESIDENTS</a></li>
+                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.past_vp">PAST VICE PRESIDENTS</a></li>
+                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.vision_mission">VISION & MISSION</a></li>
+                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a href="#">FBCCI SECRETARIAT</a></li>
                             </ul>
                         </li>
 
@@ -97,7 +92,7 @@
                 <li><a href="#">PUBLICATIONS</a></li>
                 <li><a href="#">RESEARCH PAPERS</a></li>
                 <li><a href="#">MEDIA</a></li>
-                <li><a data-ui-sref="fbcci.contact">CONTACT</a></li>
+                <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.contact">CONTACT</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -110,7 +105,7 @@
             <div class="col-md-12">
                 <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="FBCCICarousel">
                     <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                        <img ng-src="{{slide.image}}">
+                        <img class="img-responsive" ng-src="{{slide.image}}">
                     </div>
                 </div>
                 <!-- <div class="text-center notice">
@@ -121,7 +116,7 @@
 
         <div class="row panel-row">
             <!--About FBCCI Panel-->
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading custome-panel">Ongoing Events</div>
                     <div class="panel-body">
@@ -135,7 +130,7 @@
             </div>
 
             <!--Vission & Mission Panel-->
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading custome-panel">Upcoming Events</div>
                     <div class="panel-body">
@@ -152,7 +147,7 @@
             </div>
 
             <!--About FBCCI Panel-->
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading custome-panel">About FBCCI</div>
                     <div class="panel-body">
@@ -169,7 +164,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <!--Vission & Mission Panel-->
                 <div class="panel panel-default">
                     <div class="panel-heading custome-panel">Vission & Mission</div>
@@ -190,7 +185,7 @@
 
         <div class="row panel-row">
             <!--Useful Links-->
-            <div class="col-md-3">
+            <div class="col-sm-6 col-md-3">
                 <div class="panel panel-default">
                     <div class="panel-heading custome-panel">Useful Links</div>
                     <div class="panel-body">
@@ -204,8 +199,23 @@
                 </div>
             </div>
 
+
+
+            <div class="col-sm-6 col-md-3 col-md-push-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading custome-panel">International</div>
+                    <div class="panel-body">
+                        <p class="text-justify">
+                            The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
+                            is the apex trade organization of Bangladesh.
+                        </p>
+                        <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                    </div>
+                </div>
+            </div>
+
             <!--Notice Board-->
-            <div class="col-md-6">
+            <div class="col-sm-12 col-md-6 col-md-pull-3">
                 <div class="panel panel-default">
                     <div class="panel-heading text-center custome-panel">Notice Board</div>
                     <div class="panel-body bullet-list">
@@ -264,18 +274,6 @@
                 </div>
             </div>
 
-            <div class="col-md-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading custome-panel">International</div>
-                    <div class="panel-body">
-                        <p class="text-justify">
-                            The Federation of Bangladesh Chambers of Commerce and Industry (FBCCI)
-                            is the apex trade organization of Bangladesh.
-                        </p>
-                        <a href="#">MORE <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
-                    </div>
-                </div>
-            </div>
         </div><!--Second Row of Small Box Ends-->
     </div>
 </div>

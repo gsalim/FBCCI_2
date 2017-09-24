@@ -1,0 +1,21 @@
+/* 
+    Created on : Sep 14, 2017, 11:27:55 PM
+    Author     : gsalim
+*/
+.panel-default > .panel-heading {
+    /*background-image: linear-gradient($navbar-grdient-top, $panel-bg-mid, $panel-bg-bottom);*/
+    /*border-color: $navbar-grdient-bottom;*/
+    background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
+    color: white;
+    border-radius: 0 !important;
+
+    padding: 5px 10px 1px 10px;
+    height: 30px;
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+.panel-body{
+    font-size: 12px;
+}

@@ -1,0 +1,37 @@
+/* 
+    Created on : Sep 14, 2017, 11:29:21 PM
+    Author     : gsalim
+*/
+
+.notice{
+    background: $navbar-grdient-mid;
+    height: 90px;
+    color: white;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+.notice-list{
+    /*margin-top: 40px;*/
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+
+    em, i {
+        margin-top: 1px;
+        margin-right: 3px;
+        float: left;
+        color: $navbar-grdient-bottom;
+        font-weight: bold;
+    }
+
+    a, span {
+        margin: 0 0 0 11px;
+        display: block;
+        padding-bottom: 5px;
+        font-size: 12px;
+    }
+
+    box-shadow: 0 10px 10px -6px $panel-bg-bottom;
+}
+

@@ -10,7 +10,7 @@ and open the template in the editor.
 
 .dropdown-menu {
     /*color: black;*/
-    background: $navbar-grdient-bottom;
+    /*background: $navbar-grdient-bottom;*/
     font-size: 12px;
     background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
 }
@@ -19,6 +19,7 @@ and open the template in the editor.
     /*color: black;*/
     position: relative;
     /*background: $navbar-grdient-top;*/
+    border: none;
 }
 
 .dropdown-submenu > .dropdown-menu {

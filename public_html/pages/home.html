@@ -19,7 +19,7 @@
 
     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="homeCarousel">
         <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-            <img ng-src="{{slide.image}}">
+            <img class="img-responsive" ng-src="{{slide.image}}">
         </div>
     </div>
 

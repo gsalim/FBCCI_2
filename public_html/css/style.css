@@ -93,7 +93,7 @@ and open the template in the editor.
 */
 .dropdown-menu {
   /*color: black;*/
-  background: #EF7804;
+  /*background: $navbar-grdient-bottom;*/
   font-size: 12px;
   background-image: linear-gradient(#F8B131, #F49119, #EF7804);
 }
@@ -102,6 +102,7 @@ and open the template in the editor.
   /*color: black;*/
   position: relative;
   /*background: $navbar-grdient-top;*/
+  border: none;
 }
 
 .dropdown-submenu > .dropdown-menu {
@@ -296,6 +297,15 @@ and open the template in the editor.
               padding-bottom: 20px;
           }
       }*/
+  /*    @media (min-width: 992px) {
+          #homeCarousel{
+              img{
+                  width: 100%;
+                  height: 65vh;
+                  object-fit: cover; // here
+              }
+          }
+      }*/
   /*    button{
           margin-top: 20px;
           margin-bottom: 20px;
@@ -317,10 +327,6 @@ and open the template in the editor.
 .home .welcome p {
   font-size: 13px;
 }
-.home #homeCarousel img {
-  height: 500px;
-  width: 100%;
-}
 .home .btn-primary {
   /*font-family: 'Roboto Condensed', sans-serif;*/
   background-color: #383838;
@@ -337,12 +343,20 @@ and open the template in the editor.
     display: table;
     table-layout: fixed;
   }
-}
-#FBCCICarousel img {
-  height: 500px;
-  width: 100%;
-}
 
+  /*    #FBCCICarousel{
+          img{
+              height: 65vh;
+          }
+      }*/
+}
+@media (min-width: 992px) {
+  #FBCCICarousel img, #homeCarousel img {
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+  }
+}
 .text-bold {
   font-weight: bold;
 }
