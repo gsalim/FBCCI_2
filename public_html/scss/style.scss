@@ -98,7 +98,20 @@
     border: 1px solid lightgrey;
 }
 
-
+.bord-of-directors{
+    background: lightgrey;
+    img{
+        width: 200px;
+    }
+    p,hr,.row{
+        margin: 0;
+        padding: 0;
+    }
+    hr{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
 
 
 

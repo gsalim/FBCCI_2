@@ -51,14 +51,14 @@
                                 <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.past_first_vp">PAST FIRST VICE PRESIDENTS</a></li>
                                 <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.past_vp">PAST VICE PRESIDENTS</a></li>
                                 <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.vision_mission">VISION & MISSION</a></li>
-                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a href="#">FBCCI SECRETARIAT</a></li>
+                                <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref='fbcci.secretariat'>FBCCI SECRETARIAT</a></li>
                             </ul>
                         </li>
 
                         <li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">BOARD OF DIRECTORS</a>
+                            <a ng-click="hideDropDown()" tabindex="-1" data-ui-sref="fbcci.president">BOARD OF DIRECTORS</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">PRESIDENTS</a></li>
+                                <li ng-click="hideDropDown()"><a data-ui-sref="fbcci.president">PRESIDENTS</a></li>
                                 <li><a href="#">FIRST VICE PRESIDENTS</a></li>
                                 <li><a href="#">VICE PRESIDENTS</a></li>
                                 <li><a href="#">DIRECTORS</a></li>

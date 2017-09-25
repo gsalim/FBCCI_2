@@ -411,4 +411,19 @@ and open the template in the editor.
   border: 1px solid lightgrey;
 }
 
+.bord-of-directors {
+  background: lightgrey;
+}
+.bord-of-directors img {
+  width: 200px;
+}
+.bord-of-directors p, .bord-of-directors hr, .bord-of-directors .row {
+  margin: 0;
+  padding: 0;
+}
+.bord-of-directors hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
