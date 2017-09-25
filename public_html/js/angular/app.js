@@ -71,11 +71,36 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                             templateUrl: "pages/fbcci/secretariat.html"
                         }
                     }
-                }).state('fbcci.president', {
+                })
+                .state('fbcci.president', {
                     url: "/president",
                     views: {
                         "fbcci": {
                             templateUrl: "pages/fbcci/president.html"
+                        }
+                    }
+                })
+                .state('fbcci.first_vice_president', {
+                    url: "/first-vice-president",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/first_vice_president.html"
+                        }
+                    }
+                })
+                .state('fbcci.vice_president', {
+                    url: "/vice-president",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/vice_president.html"
+                        }
+                    }
+                })
+                .state('fbcci.directors', {
+                    url: "/directors",
+                    views: {
+                        "fbcci": {
+                            templateUrl: "pages/fbcci/director.html"
                         }
                     }
                 })

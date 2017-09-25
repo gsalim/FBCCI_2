@@ -24,6 +24,7 @@ $navbar-grdient-bottom: #010202;*/
 $panel-bg-mid: darkgray;
 $panel-bg-bottom: gray;*/
 /*$firstpage-bg-color: #EF7804;*/
+/*wintel.fbcci-bd.org | wintel@wintel.fbcci-bd.org | Win123!@#*/
 /*@import '_custom-gutter';*/
 /*
     Design for : Navbar
@@ -424,6 +425,25 @@ and open the template in the editor.
 .bord-of-directors hr {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.directors {
+  font-weight: bold;
+  text-align: center;
+}
+.directors button {
+  width: 150px;
+  height: 40px;
+  color: black;
+  font-weight: bold;
+  background-color: #F8B131;
+  /*border: 1px solid $navbar-seperator;*/
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
+}
+.directors button:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
