@@ -1,6 +1,6 @@
 <div class="container">
     <div class="panel panel-default">
-        <div class="panel-heading custome-panel">Directors</div>
+        <div class="panel-heading custome-panel">Board of Directors</div>
         <div class="panel-body directors">
 
             <div class="row">
@@ -8,7 +8,8 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">Directors Chamber Group</div>
                         <div class="panel-body">
-                            <button type="submit">View</button>   
+                            <!--<a href="#" class="btn btn-primary btn-lg" role="button">View</a>-->
+                            <button type="submit" ng-click="redirectTo('fbcci.directors_chamber_group')">View</button>
                         </div>
                         <div class="panel-footer">Term 2017 - 2019</div>
                     </div>
@@ -17,7 +18,7 @@
                     <div class="panel panel-default">
                         <div class="panel-heading text-bold">Directors Chamber Group</div>
                         <div class="panel-body">
-                            <button type="submit">View</button>   
+                            <button type="submit" ng-click="redirectTo('fbcci.directors_association_group')">View</button>
                         </div>
                         <div class="panel-footer">Term 2017 - 2019</div>
                     </div>
@@ -26,13 +27,13 @@
                     <div class="panel panel-default">
                         <div class="panel-heading text-bold">FBCCI Board of Directors</div>
                         <div class="panel-body">
-                            <button type="submit">Download</button>   
+                            <button type="submit" ng-click="redirectTo('fbcci.directors_list')">Download</button>
                         </div>
                         <div class="panel-footer">Term 2017 - 2019</div>
                     </div>
                 </div>
             </div>
-
+            <!--End of Row-->
         </div>
     </div>
 </div>

@@ -11,130 +11,121 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 .state('fbcci', {
                     url: "/fbcci",
                     templateUrl: "pages/fbcci.html",
-//                    onEnter: function () {
-//                        $state.go('fbcci.home');
-//                    }
                     controller: 'FBCCIController'
                 })
                 .state('fbcci.contact', {
                     url: "/contact",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/contact.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/contact.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/contact.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.about', {
                     url: "/about",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/about.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/about.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/about.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.past_presidents', {
                     url: "/past-presidents",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/past_presidents.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/past_presidents.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/past_presidents.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.past_first_vp', {
                     url: "/past-first-vp",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/past_first_vp.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/past_first_vp.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/past_first_vp.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.past_vp', {
                     url: "/past_vp",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/past_vp.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/past_vp.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/past_vp.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.vision_mission', {
                     url: "/vision_mission",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/vision_mission.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/vision_mission.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/vision_mission.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.secretariat', {
                     url: "/secretariat",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/secretariat.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/secretariat.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/secretariat.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.president', {
                     url: "/president",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/president.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/president.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/president.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.first_vice_president', {
                     url: "/first-vice-president",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/first_vice_president.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/first_vice_president.html"
+//                            views: {
+//                                "fbcci": {
+//                                    templateUrl: "pages/fbcci/first_vice_president.html"
+//                                }
+//                            }
                 })
                 .state('fbcci.vice_president', {
                     url: "/vice-president",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/vice_president.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/vice_president.html"
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/vice_president.html"
+//                        }
+//                    }
                 })
                 .state('fbcci.directors', {
                     url: "/directors",
-                    views: {
-                        "fbcci": {
-                            templateUrl: "pages/fbcci/director.html"
-                        }
-                    }
+                    templateUrl: "pages/fbcci/director.html"
+//                    controller: 'DirectorController'
+//                    views: {
+//                        "fbcci": {
+//                            templateUrl: "pages/fbcci/director.html",
+//                            controller: 'DirectorController'
+//                        }
+//                    }
                 })
-
-//                .state('home2', {
-//                    url: "/home2",
-//                    templateUrl: "pages/home2.html"
-//                })
-//                .state('contact_us', {
-//                    url: "/contact_us",
-//                    templateUrl: "pages/contact_us.html"
-//                })
-//                .state('sign_up_individual', {
-//                    url: "/sign_up_individual",
-//                    templateUrl: "pages/sign_up_individual.html"
-//                })
-//                .state('jobs', {
-//                    url: "/jobs",
-//                    templateUrl: "pages/jobs.html"
-//                })
-//                .state('loan_product', {
-//                    url: "/loan_product",
-//                    templateUrl: "pages/loan_product.html"
-//                })
-//                .state('about', {
-//                    url: "/about",
-//                    templateUrl: "pages/about.html",
-//                    controller: 'CarouselDemoCtrl'
-//                })
-//                .state('login', {
-//                    url: "/login",
-//                    templateUrl: "pages/login.html"
-//                })
-                ;
+                .state('fbcci.directors_chamber_group', {
+                    url: "/directors-chamber-group",
+                    templateUrl: "pages/fbcci/directors_chamber_group.html"
+                })
+                .state('fbcci.directors_association_group', {
+                    url: "/directors-association-group",
+                    templateUrl: "pages/fbcci/directors_association_group.html"
+                })
+                .state('fbcci.directors_list', {
+                    url: "/directors-list",
+                    templateUrl: "pages/fbcci/directors-list.html"
+                });
     }]);
 
 //app.controller('myctrl', function ($scope) {

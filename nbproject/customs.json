@@ -1,5 +1,7 @@
 {
-    "elements": {},
+    "elements": {
+        "pdfjs-viewer": {}
+    },
     "attributes": {
         "uib-carousel": {},
         "uib-collapse": {

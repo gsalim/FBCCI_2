@@ -11,6 +11,7 @@
 @import '_custom-bs-panel';
 @import '_footer';
 @import '_home';
+@import '_common-style';
 
 @media (min-width: 768px){
     .navbar-nav{
@@ -93,44 +94,5 @@
     display: -webkit-flex;
     flex-wrap: wrap;
 }
-
-.set-table-border{
-    border: 1px solid lightgrey;
-}
-
-.bord-of-directors{
-    background: lightgrey;
-    img{
-        width: 200px;
-    }
-    p,hr,.row{
-        margin: 0;
-        padding: 0;
-    }
-    hr{
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.directors{
-    font-weight: bold;
-    text-align: center;
-    button{
-        width: 150px;
-        height: 40px;
-        color: black;
-        font-weight: bold;
-        background-color: $navbar-grdient-top;
-        /*border: 1px solid $navbar-seperator;*/
-        border: none;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-image: linear-gradient($navbar-grdient-top, $navbar-grdient-mid, $navbar-grdient-bottom);
-        &:hover{
-            color: white;
-        }
-    }
-}
-
 
 

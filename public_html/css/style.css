@@ -7,6 +7,9 @@
     Author     : G.S. Alim
 */
 /*Orange Theam*/
+/*$navbar-grdient-top: #F8B131;
+$navbar-grdient-mid: #F49119;
+$navbar-grdient-bottom: #EF7804;*/
 /*Blue Theam*/
 /*$navbar-grdient-top: #0F9BD8;
 $navbar-grdient-mid: #10A1F1;
@@ -19,12 +22,17 @@ $navbar-grdient-bottom: #71706F;*/
 /*$navbar-grdient-top: #667B7B;
 $navbar-grdient-mid: #344545;
 $navbar-grdient-bottom: #010202;*/
+/*Dark Green Theam*/
+/*FBCCI Theam*/
+/*$navbar-grdient-top: #ffcc33;
+$navbar-grdient-mid: #e6ac00;
+$navbar-grdient-bottom: #b38600;*/
 /*$navbar-hover-bg: #FBC28D;*/
 /*$panel-bg-top: lightgray;
 $panel-bg-mid: darkgray;
 $panel-bg-bottom: gray;*/
 /*$firstpage-bg-color: #EF7804;*/
-/*wintel.fbcci-bd.org | wintel@wintel.fbcci-bd.org | Win123!@#*/
+/*wintel.fbcci-bd.org | wintel@wintel.fbcci-bd.org | Win123!@# */
 /*@import '_custom-gutter';*/
 /*
     Design for : Navbar
@@ -32,7 +40,7 @@ $panel-bg-bottom: gray;*/
     Author     : G.S. Alim
 */
 #bs-navbar-collapse-1 {
-  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
+  background-image: linear-gradient(#94b8b8, #75a3a3, #5c8a8a);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   /*font-weight: bold;*/
   font-size: 13px;
@@ -50,12 +58,12 @@ $panel-bg-bottom: gray;*/
   font-weight: bold;
 }
 #bs-navbar-collapse-1 .navbar-nav li :hover {
-  background: #EF7804;
+  background: #5c8a8a;
   color: black;
-  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
+  background-image: linear-gradient(#94b8b8, #75a3a3, #5c8a8a);
 }
 #bs-navbar-collapse-1 ul li {
-  border-right: 2px solid #EF7804;
+  border-right: 2px solid #5c8a8a;
 }
 #bs-navbar-collapse-1 ul :last-child {
   border-right: none;
@@ -66,7 +74,7 @@ $panel-bg-bottom: gray;*/
 }*/
 .navbar-default .navbar-nav > .open > a {
   /*background-color: #af6c2c;*/
-  background-color: #EF7804;
+  background-color: #5c8a8a;
 }
 
 .navbar-nav > li > a, .navbar-brand {
@@ -96,7 +104,7 @@ and open the template in the editor.
   /*color: black;*/
   /*background: $navbar-grdient-bottom;*/
   font-size: 12px;
-  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
+  background-image: linear-gradient(#94b8b8, #75a3a3, #5c8a8a);
 }
 
 .dropdown-submenu {
@@ -208,7 +216,7 @@ and open the template in the editor.
   margin-top: 1px;
   margin-right: 3px;
   float: left;
-  color: #EF7804;
+  color: #5c8a8a;
   font-weight: bold;
 }
 .bullet-list a, .bullet-list span {
@@ -241,7 +249,7 @@ and open the template in the editor.
     font-weight: bold;
 }*/
 .custome-panel {
-  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
+  background-image: linear-gradient(#94b8b8, #75a3a3, #5c8a8a);
   color: white !important;
   border-radius: 0 !important;
   padding: 7px 10px 1px 10px;
@@ -271,8 +279,8 @@ and open the template in the editor.
 .footer {
   height: 35px;
   margin-top: -10px;
-  background-color: #F49119;
-  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
+  background-color: #75a3a3;
+  background-image: linear-gradient(#94b8b8, #75a3a3, #5c8a8a);
   box-shadow: 0 10px 10px -3px gray;
   /*margin-bottom: 5px;*/
   /*color: white;*/
@@ -335,6 +343,60 @@ and open the template in the editor.
   margin: 20px auto;
   /*width: 15%;*/
   border-radius: 0 !important;
+}
+
+/* 
+    Created on : Sep 26, 2017, 4:23:29 PM
+    Author     : GS Alim | GMail: golam.alim | 01711-804845
+*/
+.set-table-border {
+  border: 1px solid lightgrey;
+}
+
+.bord-of-directors {
+  background: lightgrey;
+}
+.bord-of-directors img {
+  width: 200px;
+}
+.bord-of-directors p, .bord-of-directors hr, .bord-of-directors .row {
+  margin: 0;
+  padding: 0;
+}
+.bord-of-directors hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.directors {
+  font-weight: bold;
+  text-align: center;
+}
+.directors button, .directors a {
+  border-radius: 0 !important;
+  width: 150px;
+  height: 40px;
+  color: black;
+  font-weight: bold;
+  background-color: #94b8b8;
+  /*border: 1px solid $navbar-seperator;*/
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: linear-gradient(#94b8b8, #75a3a3, #5c8a8a);
+}
+.directors button:hover, .directors a:hover {
+  color: white;
+}
+
+.img-table td, .img-table th {
+  text-align: center;
+}
+.img-table img {
+  width: 100px;
+  height: 100px;
+}
+.img-table tbody > tr > td {
+  vertical-align: middle;
 }
 
 @media (min-width: 768px) {
@@ -406,44 +468,6 @@ and open the template in the editor.
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-}
-
-.set-table-border {
-  border: 1px solid lightgrey;
-}
-
-.bord-of-directors {
-  background: lightgrey;
-}
-.bord-of-directors img {
-  width: 200px;
-}
-.bord-of-directors p, .bord-of-directors hr, .bord-of-directors .row {
-  margin: 0;
-  padding: 0;
-}
-.bord-of-directors hr {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.directors {
-  font-weight: bold;
-  text-align: center;
-}
-.directors button {
-  width: 150px;
-  height: 40px;
-  color: black;
-  font-weight: bold;
-  background-color: #F8B131;
-  /*border: 1px solid $navbar-seperator;*/
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-image: linear-gradient(#F8B131, #F49119, #EF7804);
-}
-.directors button:hover {
-  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
