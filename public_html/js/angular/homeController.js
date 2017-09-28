@@ -2,7 +2,7 @@ angular.module('app').controller('HomeController', HomeController);
 HomeController.$inject = ['$scope', '$state'];
 
 function HomeController($scope, $state) {
-    $scope.myInterval = 500;
+    $scope.myInterval = 2000;
     $scope.noWrapSlides = false;
     $scope.active = 0;
     var slides = $scope.slides = [];

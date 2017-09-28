@@ -1,7 +1,7 @@
 angular.module('app').controller('FBCCIController', FBCCIController);
-FBCCIController.$inject = ['$scope', '$state', '$window'];
+FBCCIController.$inject = ['$scope', '$state', '$window', '$location'];
 
-function FBCCIController($scope, $state) {
+function FBCCIController($scope, $state, $window, $location, vm) {
     $scope.isNavCollapsed = true;
 
     $scope.myInterval = 2500;
@@ -43,6 +43,12 @@ function FBCCIController($scope, $state) {
 
     $scope.redirectTo = function (dir) {
         $state.go(dir);
+    };
+
+    $scope.downloadFile = function (doc) {
+//        documents/Board-of-Directors-List-2017-2019.pdf
+        var url = new $window.URL($location.absUrl()).origin + "/api/voyages/" +vm.voyage.id + '/documents/' + doc.id + '?auth=' + token;
+        $window.open(url);
     };
 
     //angular.element($window).on('resize', function () {

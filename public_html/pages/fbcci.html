@@ -86,8 +86,18 @@
                         </li>
                     </ul>
                 </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DIVISIONS<span class="caret dropdown-caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.general_affairs">GENERAL AFFAIRS</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.membership_legal_affairs">MEMBERSHIP & LEGAL AFFAIRS</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.international_division">INTERNATIONAL DIVISION</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.research_division">RESEARCH DIVISION</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.trade_finance">TRADE AND FINANCE</a></li>
+                    </ul>
+                </li>
 
-                <li><a href="#">DIVISIONS</a></li>
+                <!--<li ng-click="hideDropDown()"><a data-ui-sref="fbcci.general_affairs">DIVISIONS</a></li>-->
                 <li><a href="#">EVENTS</a></li>
                 <li><a href="#">PUBLICATIONS</a></li>
                 <li><a href="#">RESEARCH PAPERS</a></li>
@@ -101,6 +111,7 @@
 <div data-ui-view>
     <!--http://www.cii.in/-->
     <div class="container fbcci">
+
         <div class="row">
             <div class="col-md-12">
                 <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="FBCCICarousel">
@@ -108,9 +119,6 @@
                         <img class="img-responsive" ng-src="{{slide.image}}">
                     </div>
                 </div>
-                <!-- <div class="text-center notice">
-                    <h2>NOTICE</h2>
-                </div>-->
             </div><!--Carosusel Div End-->
         </div><!--Carosusel Row End-->
 

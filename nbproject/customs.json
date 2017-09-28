@@ -1,9 +1,11 @@
 {
     "elements": {
+        "pdf-download": {},
         "pdfjs-viewer": {}
     },
     "attributes": {
         "uib-carousel": {},
+        "u": {},
         "uib-collapse": {
             "context": "div"
         }

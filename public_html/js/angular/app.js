@@ -125,6 +125,30 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 .state('fbcci.directors_list', {
                     url: "/directors-list",
                     templateUrl: "pages/fbcci/directors-list.html"
+                })
+                .state('fbcci.general_affairs', {
+                    url: "/general-affairs",
+                    templateUrl: "pages/fbcci/general_affairs.html"
+                })
+                .state('fbcci.membership_legal_affairs', {
+                    url: "/membership-legal-affairs",
+                    templateUrl: "pages/fbcci/membership_legal_affairs.html"
+                })
+                .state('fbcci.international_division', {
+                    url: "/international-division",
+                    templateUrl: "pages/fbcci/international_division.html"
+                })
+                .state('fbcci.research_division', {
+                    url: "/research-division",
+                    templateUrl: "pages/fbcci/research_division.html"
+                })
+                .state('fbcci.trade_finance', {
+                    url: "/trade-finance",
+                    templateUrl: "pages/fbcci/trade_finance.html"
+                })
+                .state('fbcci.pr_protocols', {
+                    url: "/pr-protocols",
+                    templateUrl: "pages/fbcci/pr_protocols.html"
                 });
     }]);
 
