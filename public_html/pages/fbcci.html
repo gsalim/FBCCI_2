@@ -54,7 +54,6 @@
                                 <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref='fbcci.secretariat'>FBCCI SECRETARIAT</a></li>
                             </ul>
                         </li>
-
                         <li class="dropdown-submenu">
                             <a ng-click="hideDropDown()" tabindex="-1" data-ui-sref="fbcci.president">BOARD OF DIRECTORS</a>
                             <ul class="dropdown-menu">
@@ -62,26 +61,31 @@
                                 <li ng-click="hideDropDown()"><a data-ui-sref="fbcci.first_vice_president">FIRST VICE PRESIDENTS</a></li>
                                 <li ng-click="hideDropDown()"><a data-ui-sref="fbcci.vice_president">VICE PRESIDENTS</a></li>
                                 <li ng-click="hideDropDown()"><a data-ui-sref="fbcci.directors">DIRECTORS</a></li>
-                                <!--<li ng-click="hideDropDown()"><a data-ui-sref="#">PRESIDENT DESIGNATION</a></li>-->
-                                <!--<li ng-click="hideDropDown()"><a data-ui-sref="#">DIRECTOR GENERAL</a></li>-->
-                                <!--<li ng-click="hideDropDown()"><a data-ui-sref="#">EXECUTIVE BOARD</a></li>-->                                        
                             </ul>
                         </li>
-
                         <li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">FBCCI MEMBERSHIPS</a>
+                            <a ng-click="hideDropDown()" tabindex="-1" data-ui-sref="fbcci">FBCCI MEMBERSHIPS</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">CHIEF MEMBER BODIES</a></li>
-                                <li><a href="#">GENERAL BODY MEMBERS (CHAMBERS 2017-2019)</a></li>
-                                <li><a href="#">GENERAL BODY MEMBERS (ASSOCIATIONS 2017-2019)</a></li>
+                                <li ng-click="hideDropDown()"><a target="_self" href="documents/chief-of-member-bodies-latest-with-name.pdf"
+                                                                 download="chief-of-member-bodies-latest-with-name.pdf">
+                                        CHIEF MEMBER BODIES</a></li>
+                                <li ng-click="hideDropDown()"><a target="_self" href="documents/Final-Voter-list-Chamber-2017-2019-Final.pdf"
+                                                                 download="Final-Voter-list-Chamber-2017-2019-Final.pdf">
+                                        GENERAL BODY MEMBERS (CHAMBERS 2017-2019)</a></li>
+                                <li ng-click="hideDropDown()"><a target="_self" href="documents/Final-Voter-list-Chamber-2017-2019-Final.pdf"
+                                                                 download="Final-Voter-list-Chamber-2017-2019-Final.pdf">
+                                        GENERAL BODY MEMBERS (ASSOCIATIONS 2017-2019)</a></li>
                             </ul>
                         </li>
-
                         <li class="dropdown-submenu">
-                            <a tabindex="-1" href="#">STANDING COMMITTEE</a>
+                            <a ng-click="hideDropDown()" data-ui-sref="fbcci">STANDING COMMITTEE</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">STANDING COMMITTEE LISTS</a></li>
-                                <li><a href="#">STANDING COMMITTEE MEMBERS</a></li>
+                                <li ng-click="hideDropDown()">
+                                    <a target="_self" href="documents/List of Standing Committees for the Term-2015-2017-Proposed.pdf"
+                                       download="List of Standing Committees for the Term-2015-2017-Proposed.pdf">
+                                        STANDING COMMITTEE LISTS</a>
+                                </li>
+                                <li><a ng-click="hideDropDown()" data-ui-sref="fbcci">STANDING COMMITTEE CALENDER</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -94,12 +98,26 @@
                         <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.international_division">INTERNATIONAL DIVISION</a></li>
                         <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.research_division">RESEARCH DIVISION</a></li>
                         <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.trade_finance">TRADE AND FINANCE</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.pr_protocols">PR AND PROTOCOLS</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.sme_price_monitoring">SME AND PRICE MONITORING</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EVENTS<span class="caret dropdown-caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.ongoing_events">ONGOING EVENTS</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.upcoming_events">UPCOMMING EVENTS</a></li>
                     </ul>
                 </li>
 
-                <!--<li ng-click="hideDropDown()"><a data-ui-sref="fbcci.general_affairs">DIVISIONS</a></li>-->
-                <li><a href="#">EVENTS</a></li>
-                <li><a href="#">PUBLICATIONS</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PUBLICATIONS<span class="caret dropdown-caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.annual_report">FBCCI ANNUAL REPORT</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.business_report">FBCCI BUSINESS REPORT</a></li>
+                    </ul>
+                </li>
+                
                 <li><a href="#">RESEARCH PAPERS</a></li>
                 <li><a href="#">MEDIA</a></li>
                 <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.contact">CONTACT</a></li>

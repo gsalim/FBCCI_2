@@ -149,8 +149,33 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 .state('fbcci.pr_protocols', {
                     url: "/pr-protocols",
                     templateUrl: "pages/fbcci/pr_protocols.html"
+                })
+                .state('fbcci.sme_price_monitoring', {
+                    url: "/sme-price-monitoring",
+                    templateUrl: "pages/fbcci/sme_price_monitoring.html"
+                })
+                .state('fbcci.ongoing_events', {
+                    url: "/ongoing-events",
+                    templateUrl: "pages/fbcci/ongoing_events.html"
+                })
+                .state('fbcci.upcoming_events', {
+                    url: "/upcoming-events",
+                    templateUrl: "pages/fbcci/upcoming_events.html"
+                })
+                .state('fbcci.annual_report', {
+                    url: "/annual-report",
+                    templateUrl: "pages/fbcci/annual_report.html"
+                })
+                .state('fbcci.business_report', {
+                    url: "/business-report",
+                    templateUrl: "pages/fbcci/business_report.html"
                 });
     }]);
+
+//                .state('fbcci.events', {
+//                    url: "/events",
+//                    templateUrl: "pages/fbcci/events.html"
+//                })
 
 //app.controller('myctrl', function ($scope) {
 //    $scope.alim = "1.1.6";
