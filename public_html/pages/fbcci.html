@@ -117,9 +117,18 @@
                         <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.business_report">FBCCI BUSINESS REPORT</a></li>
                     </ul>
                 </li>
-                
-                <li><a href="#">RESEARCH PAPERS</a></li>
-                <li><a href="#">MEDIA</a></li>
+
+                <li><a data-ui-sref="fbcci.research_papers">RESEARCH PAPERS</a></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEDIA<span class="caret dropdown-caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.press_release">Press Release</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.photo_gallery">Photo Gallery</a></li>
+                        <li><a ng-click="hideDropDown()" data-ui-sref="fbcci.video_gallery">Video Gallery</a></li>
+                    </ul>
+                </li>
+
                 <li ng-click="isNavCollapsed = !isNavCollapsed"><a data-ui-sref="fbcci.contact">CONTACT</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -132,11 +141,23 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="FBCCICarousel">
-                    <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                        <img class="img-responsive" ng-src="{{slide.image}}">
+                <!--                <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides" id="FBCCICarousel">
+                                    <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                                        <img class="img-responsive" ng-src="{{slide.image}}">
+                                    </div>
+                                </div>-->
+
+                <!--<div class="container" style="height: 77vh">-->
+                <div camera options="{thumbnails: true, pagination: true, height: '500px', fx: 'random', time: 2000}" class="camera_wrap camera_azure_skin">
+                    <div
+                        ng-repeat="image in images" data-thumb="{{image.thumb}}" data-src="{{image.bigimage}}">
+                        <div class="camera_caption fadeFromBottom text-center">
+                            {{image.desc}}
+                        </div>
                     </div>
                 </div>
+                <!--</div>-->
+
             </div><!--Carosusel Div End-->
         </div><!--Carosusel Row End-->
 

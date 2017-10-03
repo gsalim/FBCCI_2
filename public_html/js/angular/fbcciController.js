@@ -47,9 +47,24 @@ function FBCCIController($scope, $state, $window, $location, vm) {
 
     $scope.downloadFile = function (doc) {
 //        documents/Board-of-Directors-List-2017-2019.pdf
-        var url = new $window.URL($location.absUrl()).origin + "/api/voyages/" +vm.voyage.id + '/documents/' + doc.id + '?auth=' + token;
+        var url = new $window.URL($location.absUrl()).origin + "/api/voyages/" + vm.voyage.id + '/documents/' + doc.id + '?auth=' + token;
         $window.open(url);
     };
+
+    //Camera slideshow
+    $scope.images = [
+        {
+            bigimage: 'images/sliders/DSC_0146.jpg',
+//            thumb: 'images/slides/thumbs/bridge.jpg',
+            desc: ''
+        },
+        {
+            bigimage: 'images/sliders/DSC_0724.jpg',
+//            thumb: 'images/slides/thumbs/leaf.jpg',
+            desc: 'God save the queen.'
+        }
+    ];
+
 
     //angular.element($window).on('resize', function () {
     //   console.log($window.innerWidth);

@@ -8,6 +8,7 @@
         "u": {},
         "uib-collapse": {
             "context": "div"
-        }
+        },
+        "camera": {}
     }
 }

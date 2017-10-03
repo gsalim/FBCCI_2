@@ -12,6 +12,7 @@
 @import '_footer';
 @import '_home';
 @import '_common-style';
+@import '_camera-panel';
 
 @media (min-width: 768px){
     .navbar-nav{
@@ -20,12 +21,6 @@
         display: table;
         table-layout: fixed;
     }
-
-    /*    #FBCCICarousel{
-            img{
-                height: 65vh;
-            }
-        }*/
 }
 
 @media (min-width: 992px) {

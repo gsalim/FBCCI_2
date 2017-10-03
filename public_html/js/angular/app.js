@@ -16,103 +16,46 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 .state('fbcci.contact', {
                     url: "/contact",
                     templateUrl: "pages/fbcci/contact.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/contact.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.about', {
                     url: "/about",
                     templateUrl: "pages/fbcci/about.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/about.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.past_presidents', {
                     url: "/past-presidents",
                     templateUrl: "pages/fbcci/past_presidents.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/past_presidents.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.past_first_vp', {
                     url: "/past-first-vp",
                     templateUrl: "pages/fbcci/past_first_vp.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/past_first_vp.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.past_vp', {
                     url: "/past_vp",
                     templateUrl: "pages/fbcci/past_vp.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/past_vp.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.vision_mission', {
                     url: "/vision_mission",
                     templateUrl: "pages/fbcci/vision_mission.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/vision_mission.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.secretariat', {
                     url: "/secretariat",
                     templateUrl: "pages/fbcci/secretariat.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/secretariat.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.president', {
                     url: "/president",
                     templateUrl: "pages/fbcci/president.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/president.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.first_vice_president', {
                     url: "/first-vice-president",
                     templateUrl: "pages/fbcci/first_vice_president.html"
-//                            views: {
-//                                "fbcci": {
-//                                    templateUrl: "pages/fbcci/first_vice_president.html"
-//                                }
-//                            }
                 })
                 .state('fbcci.vice_president', {
                     url: "/vice-president",
                     templateUrl: "pages/fbcci/vice_president.html"
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/vice_president.html"
-//                        }
-//                    }
                 })
                 .state('fbcci.directors', {
                     url: "/directors",
                     templateUrl: "pages/fbcci/director.html"
-//                    controller: 'DirectorController'
-//                    views: {
-//                        "fbcci": {
-//                            templateUrl: "pages/fbcci/director.html",
-//                            controller: 'DirectorController'
-//                        }
-//                    }
                 })
                 .state('fbcci.directors_chamber_group', {
                     url: "/directors-chamber-group",
@@ -169,6 +112,22 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
                 .state('fbcci.business_report', {
                     url: "/business-report",
                     templateUrl: "pages/fbcci/business_report.html"
+                })
+                .state('fbcci.research_papers', {
+                    url: "/research-papers",
+                    templateUrl: "pages/fbcci/research_papers.html"
+                })
+                .state('fbcci.press_release', {
+                    url: "/press-release",
+                    templateUrl: "pages/fbcci/press_release.html"
+                })
+                .state('fbcci.photo_gallery', {
+                    url: "/photo-gallery",
+                    templateUrl: "pages/fbcci/photo_gallery.html"
+                })
+                .state('fbcci.video_gallery', {
+                    url: "/video-gallery",
+                    templateUrl: "pages/fbcci/video_gallery.html"
                 });
     }]);
 
@@ -177,9 +136,21 @@ app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $u
 //                    templateUrl: "pages/fbcci/events.html"
 //                })
 
-//app.controller('myctrl', function ($scope) {
-//    $scope.alim = "1.1.6";
-//});
+app.directive('camera', [
+    "$compile", "$timeout", function ($compile, $timeout) {
+        return {
+            restrict: 'A',
+            scope: {
+                options: '='
+            },
+            link: function ($scope, element, attr) {
+                return $timeout(function () {
+                    return jQuery(element).camera($scope.options);
+                }, 500);
+            }
+        };
+    }
+]);
 
 //    http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/
 //    https://greensock.com/get-started-js#basics

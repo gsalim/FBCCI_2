@@ -1,0 +1,65 @@
+/* 
+    Created on : Oct 3, 2017, 4:54:47 PM
+    Author     : GS Alim | GMail: golam.alim | 01711-804845
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #09f;
+}
+a:hover {
+    text-decoration: none;
+}
+#back_to_camera {
+    clear: both;
+    display: block;
+    height: 80px;
+    line-height: 40px;
+    padding: 20px;
+}
+.fluid_container {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+}
+
+.site__header {
+    -webkit-animation: bounceInUp 1s;
+}
+
+.site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+}
+
+.site__content {
+    -webkit-animation: bounceInUp 1s;
+    -webkit-animation-delay: .1s;
+}
+
+.site__content form {
+    -webkit-animation: bounceInUp 1s;
+    -webkit-animation-delay: .1s;
+}
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+
